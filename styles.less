@@ -1,0 +1,85 @@
+@primary-color: #42625F;
+@secondary-color: #624245;
+@tertiary-color: #84C3BE;
+@accent-color: #C38489;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: @primary-color;
+    color: @tertiary-color;
+}
+
+div {
+    text-align: center;
+}
+
+#instructions {
+    padding: 20px;
+}
+
+#instructions p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#instructions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#instructions li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#city {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: @secondary-color;
+    color: @tertiary-color;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 10px @accent-color;
+    }
+}
+
+#getTemperature {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: @accent-color;
+    color: @primary-color;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        background-color: @tertiary-color;
+        color: @accent-color;
+    }
+}
+
+#temperature {
+    font-size: 24px;
+    padding: 20px;
+    background-color: @tertiary-color;
+    color: @primary-color;
+}
+
+// Estilos específicos para dispositivos móveis
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
