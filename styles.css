@@ -6,6 +6,11 @@ body {
 div {
   text-align: center;
 }
+h1 {
+  color: #624245;
+  font-size: 2rem;
+  text-align: center;
+}
 #instructions {
   padding: 20px;
 }
@@ -51,6 +56,16 @@ div {
   padding: 20px;
   background-color: #84C3BE;
   color: #42625F;
+}
+footer {
+  background-color: condar;
+  padding: 20px;
+  text-align: center;
+}
+footer h2 {
+  color: #42625F;
+  font-size: 24px;
+  margin-bottom: 0;
 }
 @media (max-width: 768px) {
   body {

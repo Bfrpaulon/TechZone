@@ -3,12 +3,13 @@
 <head>
     <link rel="stylesheet/less" type="text/css" href="styles.less" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.11.3/less.min.js"></script>
-    
+
     <title>Temperatura Atual</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <h1>Termometro de Temperatura</h1>
     <div>
         <label for="city">Cidade:</label>
         <input type="text" id="city" placeholder="Exemplo: São Paulo,br">
@@ -22,6 +23,9 @@
             <li>Verificar no site da OpenWeatherMap a lista completa de cidades suportadas.</li>
         </ul>
     </div>
+    <footer>
+        <h2>&COPY Developed by Bruno Paulon</h2>
+    </footer>
     <script>
         $("#getTemperature").on("click", function () {
             // Obtendo o nome da cidade inserido pelo usuário
